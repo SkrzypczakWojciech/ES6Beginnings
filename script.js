@@ -1,15 +1,14 @@
-var first = ['Hello']
-var second = ['World']
 
-var connected = [...first,...second]
-document.write('zadanie1 :' + connected + '<br>')
+let first = `Hello`;
+let second = `World`;
+
+document.write('zadanie1 :' +`${first} ${second}`+  '<br>');
 
 function multiply(number1 = '1',number2 = '1') {
 	let score = number1*number2
 	document.write('zadanie2: '+ score + '<br>')
 }
-
-multiply()
+multiply(8)
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
 var total = 0;
