@@ -8,20 +8,18 @@ document.write('zadanie1 :' +`${first} ${second}`+  '<br>');
 const multiply = (x = 1,y = 1) => x * y;
 document.write('zadanie2: '+ multiply(7) + '<br>')
 
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 var total = 0;
-var arguments = [1, 5, 5, 5, 4, 3, 3, 2, 1]
-const avg = (...args) => args.forEach(arg => total +=);
-document.write('zadanie3i4: '+ avg + '<br>')
 
+function avarage() {
+	for(var i = 0; i < grades.length; i++) {
+    	total += grades[i];
+	}
+	return avg = total / grades.length;
+	}
 
-/*var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
-var total = 0;
-for(var i = 0; i < grades.length; i++) {
-    total += grades[i];
-}
-var avg = total / grades.length;
-document.write('zadanie3i4: '+ avg + '<br>')
-*/
+document.write('zadanie3i4: '+ avarage() + '<br>')
+
 
 const array = [1, 4, 'Iwona', false, 'Nowak']
 const [,,FirstName,,SecondName] = array
